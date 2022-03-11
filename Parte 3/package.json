@@ -4,8 +4,12 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "tsc --build && clear && node build/main.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^10.4.0",
+    "typescript": "^4.6.2"
+  }
 }
