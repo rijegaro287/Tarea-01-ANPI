@@ -38,7 +38,6 @@ def newton_H_m2(fun, x0, tol, iterMax):
     b = 3
 
     while i < iterMax:
-        print(i)
         n = sp.N(fun.subs(x,xk))
         d = sp.N(d_fun.subs(x,xk))
         u = n/d
