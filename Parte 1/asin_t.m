@@ -8,7 +8,7 @@ function y=asin_t(x)
       #xdiv = div_t((4^n)*(factorial(n))^2*((2*n)+1));
       xdiv = div_t(4^n)*div_t((factorial(n))^2)*div_t((2*n)+1);
       
-      sumak = suma+((factorial(2*n))*(x^(2*n+1))*xdiv)
+      sumak = suma+((factorial(2*n))*(x^(2*n+1))*xdiv);
       
       err = abs(sumak-suma);
       suma = sumak;
