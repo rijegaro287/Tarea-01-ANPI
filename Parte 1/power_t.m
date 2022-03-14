@@ -4,9 +4,6 @@ function y=power_t(x,a)
     
     else
       y = exp_t(x*ln_t(a));
-      
-      
     endif
     
-  
 end
