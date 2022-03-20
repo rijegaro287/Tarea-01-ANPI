@@ -1,19 +1,11 @@
-import { factorial, pi } from "mathjs";
 import {
     div_t,
     exp_t,
-    power_t,
     sin_t,
-    cos_t,
-    tan_t,
     ln_t,
-    log_t,
     sinh_t,
-    cosh_t,
-    tanh_t,
     sqrt_t,
     root_t,
-    asin_t,
     atan_t
 } from "./parte_1"
 
