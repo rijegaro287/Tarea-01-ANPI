@@ -44,7 +44,7 @@ def newton_H_m2(fun, x0, tol, iterMax):
 
         D = 1 + b*u
         xk = xk - 1/D *u
-        print("xk es",xk)
+        
         i += 1
         error = abs(sp.N(fun.subs(x,xk)))
         if error < tol:
