@@ -1,4 +1,4 @@
-function y=root_t(x,a)  # no funciona con indices negativos
+function y=root_t(x,a) #utilizando mod
   pkg load symbolic
   
   tol = 10^-8;
@@ -10,7 +10,7 @@ function y=root_t(x,a)  # no funciona con indices negativos
   g_num = matlabFunction(g(z));
   gd_num = matlabFunction(gd(z));
   
-  if x >= 0
+  if ((x >= 0 && mod(a,2)==0)||(mod(a,2)!=0))
     if a != 0
       
       xk = abs(a)*div_t(2);
@@ -25,10 +25,10 @@ function y=root_t(x,a)  # no funciona con indices negativos
         
         if abs(xksig-xk)<tol*abs(xksig)
           if a>0
-            y = abs(xksig);
+            y = (xksig);
             break
           else
-            y = div_t(abs(xksig));
+            y = div_t((xksig));
             break
           endif
 
@@ -45,7 +45,7 @@ function y=root_t(x,a)  # no funciona con indices negativos
       error("El indice a no puede ser cero \n");
     endif  
   else
-    error("x no puede ser negativo \n");
+    error("x no puede ser negativo cuando el indice es par\n");
   endif
      
 end

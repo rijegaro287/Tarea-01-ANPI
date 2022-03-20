@@ -4,8 +4,8 @@ function y=ln_t(x)
   suma = 0;
   
   if x<0
-    error("x no puede ser negativo\n");
-    printf("x no puede ser negativo\n");
+    error("x tiene que ser positivo\n");
+    printf("x tiene que ser positivo\n");
   else
     for n=0:iterMax
     
@@ -13,7 +13,7 @@ function y=ln_t(x)
     err = abs(sumak-suma);
     suma = sumak;
     if err<tol
-      printf("Salida por tolerancia\n");
+      #printf("Salida por tolerancia\n");
       y = sumak;
       break
     endif

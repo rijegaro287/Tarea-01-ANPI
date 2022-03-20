@@ -7,7 +7,7 @@ function y=atan_t(x)
       #xdiv = div_t((4^n)*(factorial(n))^2*((2*n)+1));
       xdiv = div_t(2*n+1);
       
-      sumak = suma+(((-1)^n)*(x^(2*n+1))*xdiv)
+      sumak = suma+(((-1)^n)*(x^(2*n+1))*xdiv);
       
       err = abs(sumak-suma);
       suma = sumak;

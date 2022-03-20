@@ -1,0 +1,1 @@
+root_t(sin_t(3*div_t(7))+ln_t(2),3)*div_t(sinh_t(sqrt_t(2)))+atan_t(exp_t(-1))

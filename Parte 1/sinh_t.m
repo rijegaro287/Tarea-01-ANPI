@@ -1,4 +1,4 @@
-function y=sinh_t(x) # funciona hasta 37 porque se da que 2n+1 > 100! y no se pueda calcular x0
+function y=sinh_t(x) 
   tol = 10^-8;
   iterMax = 2500;
   suma = 0;

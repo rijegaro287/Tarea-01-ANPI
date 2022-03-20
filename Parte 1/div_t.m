@@ -4,10 +4,10 @@ function y=div_t(x)
   xk = 0;
   xksig = 0;
 
-  #if abs(x)>factorial(100)
-    #y = 0;
-  #else
-    if abs(x)>factorial(80) #&& abs(x)<=factorial(100)
+  if abs(x)>factorial(100)
+    y = 0;
+  else
+    if abs(x)>factorial(80) && abs(x)<=factorial(100)
       xk = eps^15;
       
     elseif abs(x)>factorial(60) && abs(x)<=factorial(80)
@@ -48,6 +48,6 @@ function y=div_t(x)
       xk = xksig;
     endfor
   
-  #endif
+  endif
 
 end
