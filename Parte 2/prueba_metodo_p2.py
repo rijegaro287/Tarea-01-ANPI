@@ -1,7 +1,7 @@
 from metodos_p2 import *
 
 f = "cos(x) - x"
-tol = 10**-5
+tol = 10**-10
 iterMax = 500
 x0 = 2.1
 
